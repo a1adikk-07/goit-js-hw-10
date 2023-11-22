@@ -1,5 +1,6 @@
 import SlimSelect from 'slim-select';
 import Notiflix from 'notiflix';
+import 'slim-select/dist/slimselect.css';
 import { fetchBreeds, fetchCatByBreed } from "./api";
 
 const refs = {
