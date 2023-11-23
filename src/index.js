@@ -22,7 +22,6 @@ function option(info) {
     refs.loader.style.display = 'none';
 }
 
-
 function createMarkup(breeds, url) {
     const { name, temperament, description } = breeds;
     const catsInformation = `
@@ -56,6 +55,7 @@ function onChange(i) {
             refs.catInfo.style.gap = '10';
             refs.loader.style.display = 'none';
         })
+
     .catch(() => {
         Notiflix.Notify.failure(refs.error.textContent);
         refs.error.style.display = 'block';
